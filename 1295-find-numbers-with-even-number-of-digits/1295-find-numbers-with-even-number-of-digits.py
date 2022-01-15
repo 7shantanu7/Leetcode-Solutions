@@ -1,3 +1,3 @@
 class Solution:
     def findNumbers(self, nums: List[int]) -> int:
-        return sum(len(str(n))%2==0 for n in nums)
+        return sum(int(math.log10(n)) % 2 for n in nums)
